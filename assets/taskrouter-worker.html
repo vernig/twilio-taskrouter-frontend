@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript"
+    src="//sdk.twilio.com/js/client/releases/1.10.1/twilio.js"></script>
+    <script
+      type="text/javascript"
+      src="//media.twiliocdn.com/taskrouter/js/v1.20/taskrouter.min.js"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <title>Worker frontend</title>
+  </head>
+  <body class="mx-3">
+    <h3>Worker</h3>
+    <div id="worker" class="mt-3">
+    </div>
+    <div id="call-controls" style="display: none;" class="mt-3">
+    </div>
+    <div id="reservations" class="mt-3">
+    <h3>Reservations</h3>
+      <ul class="list-group" id="reservations-group"></ul>
+    </div>
+
+    <script>
+      urlParams = new URLSearchParams(window.location.search);
+      const WORKER_SID = urlParams.get('workerSid');
+    </script>
+
+    <script src="taskrouter-components/ReservationsListComponent.js"></script>
+    <script src="taskrouter-components/WorkerComponent.js"></script>
+    <script src="taskrouter-worker.js"></script>
+  </body>
+</html>
