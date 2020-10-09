@@ -3,15 +3,13 @@ var reservationsListComponent;
 
 // Sample code for customizing the worker component
 function customizeWorkerComponent(component) {
-  // Add (Bootstrap) style to default shown attributes 
-  component.workerAttributes.forEach((attribute) => {
-    attribute.class += ' list-group-item';
-  });
   // Add new worker's attribute to be show in the component 
+  // As example, we pourposly use a bootstrap class for that. 
+  // Alternative you can use the default class `worker-attribute`
   component.workerAttributes.push({
     label: 'sid',
     key: 'sid',
-    class: ' list-group-item',
+    class: 'list-group-item',
   });
 }
 

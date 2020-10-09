@@ -11,24 +11,24 @@ class WorkerComponent {
       {
         label: 'Name',
         key: 'friendlyName',
-        class: 'worker-attribute ',
+        class: 'worker-attribute',
       },
       {
         label: 'Activity',
         key: 'activityName',
-        class: 'worker-attribute ',
+        class: 'worker-attribute',
       },
       {
         label: 'Available',
         key: 'available',
-        class: 'worker-attribute ',
+        class: 'worker-attribute',
       },
     ];
     this.workerActions = [
       {
         caption: 'Toggle Availability',
         fn: this._toggleAvailability,
-        class: 'btn btn-info',
+        class: 'worker-action-btn',
       },
     ];
 
@@ -185,7 +185,7 @@ class WorkerComponent {
     });
     // Render Actions
     let actionsContainer = document.createElement('DIV');
-    actionsContainer.classList = 'worker-actions-container list-group-item';
+    actionsContainer.classList = 'worker-actions-container';
     actionsContainer.append(this._createActivityListDropdown());
     this.workerActions
     this._rootElement.append(actionsContainer);

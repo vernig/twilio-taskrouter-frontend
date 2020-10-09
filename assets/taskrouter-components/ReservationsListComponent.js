@@ -1,18 +1,5 @@
 /**
  * Class ReservationList 
- * 
- * 
- * Style classes:
- * 
- * reservation-container: DIV container for the one reservation 
- * reservation-accept-btn: Accept button for reservation
- * reservation-reject-btn: Reject button for reservation
- * reservation-attribute: Rservation attribute entry 
- * reservation-actions-container: Container for reservation's buttons
- * 
- * task-complete-btn: Complete button for Task
- * task-attribute: Task attribute entry
- * 
  */
 
 class ReservationsListComponent {
@@ -33,19 +20,19 @@ class ReservationsListComponent {
         {
           label: 'Accept',
           fn: this._acceptReservation,
-          class: 'reservation-accpet-btn btn btn-primary mr-2',
+          class: 'reservation-accept-btn',
         },
         {
           label: 'Reject',
           fn: this._rejectReservation,
-          class: 'reservation-reject-btn btn btn-danger mr-2 ',
+          class: 'reservation-reject-btn',
         },
       ],
       assigned: [
         {
           label: 'Complete Task',
           fn: this._completeTask,
-          class: 'task-complete-btn btn btn-primary mr-2',
+          class: 'task-complete-btn',
         },
       ],
       completed: [],
@@ -149,8 +136,8 @@ class ReservationsListComponent {
           reservation.reservationStatus !== 'timeout' &&
           reservation.reservationStatus !== 'rejected'
         ) {
-          let reservationComponent = document.createElement('li');
-          reservationComponent.classList = 'reservation-container list-group-item';
+          let reservationComponent = document.createElement('div');
+          reservationComponent.classList = 'reservation-container';
           reservationComponent.appendChild(
             this._renderReservationAttributes(reservation)
           );

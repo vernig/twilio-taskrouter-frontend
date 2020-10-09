@@ -16,3 +16,7 @@ The project itself is a _ready made_ deployable frontend for Taskrouter, using B
 # Setup 
 
 # Usage 
+
+# Apply Styling
+
+Styling is done through Sass package. The main SCSS file is `./scss/frontend.scss`. This gets compiled into `./assets/taskrouter-frontend.css`. This repo uses Bootstrap for styling. Bootstrap is imported as developer dependency, and it's compiled in the css using SASS `@extend`. 

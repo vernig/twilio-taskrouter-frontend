@@ -1,0 +1,49 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// ReservationsListComponent
+
+.reservation-accept-btn {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .mr-2;
+}
+
+.reservation-reject-btn {
+  @extend .btn;
+  @extend .btn-danger;
+  @extend .mr-2;
+}
+
+.reservation-container {
+  @extend .list-group-item;
+}
+
+.reservation-attribute {
+}
+
+.reservation-actions-container {
+}
+
+.task-complete-btn {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .mr-2;
+}
+
+.task-attribute {
+}
+
+// WorkerComponent
+
+.worker-actions-container {
+  @extend .list-group-item;
+}
+
+.worker-attribute {
+  @extend .list-group-item;
+}
+
+.worker-action-btn {
+  @extend .btn;
+  @extend .btn-info;
+}
