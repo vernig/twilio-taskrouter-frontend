@@ -4,7 +4,8 @@
   "description": "Taskrouter frontend",
   "scripts": {
     "start": "twilio-run",
-    "deploy": "twilio-run deploy"
+    "deploy": "twilio-run deploy",
+    "sass": "sass ./scss/taskrouter-frontend.scss ./assets/taskrouter-frontend.css --no-source-map"
   },
   "keywords": [
     "twilio",
@@ -12,10 +13,10 @@
   ],
   "author": "gverni",
   "license": "MIT",
-  "dependencies": {
-    "dotenv": "^8.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "twilio-run": "^2.8.0"
+    "twilio-run": "^2.8.0",
+    "bootstrap": "^4.5.2",
+    "sass": "^1.27.0"
   }
 }
