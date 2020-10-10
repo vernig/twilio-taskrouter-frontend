@@ -1,4 +1,7 @@
-const debug = require('debug')('get-tr-token')
+function debug(message) {
+  console.log(message)
+}
+
 /** Return taskrouter token
  *
  * @param string workerSid
