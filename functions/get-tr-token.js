@@ -1,3 +1,4 @@
+const debug = require('debug')('get-tr-token')
 /** Return taskrouter token
  *
  * @param string workerSid
@@ -12,13 +13,14 @@ exports.handler = function (context, event, callback) {
 
   const accountSid = process.env.ACCOUNT_SID;
   const authToken = process.env.AUTH_TOKEN;
-  const workspaceSid = process.env.TWILIO_TR_WORKSPACE_SID;
+  const workspaceSid = event.workspaceSid || process.env.TWILIO_TR_WORKSPACE_SID;
   const workerSid = event.workerSid;
 
   const TASKROUTER_BASE_URL = 'https://taskrouter.twilio.com';
   const version = 'v1';
 
-  if (!workerSid) {
+  if (!workerSid & !workspaceSid) {
+    debug('No worker sid and workspace sid specified')
     callback(401);
   }
 
@@ -29,7 +31,7 @@ exports.handler = function (context, event, callback) {
     channelId: workerSid,
   });
 
-  console.log('Received token request for ' + workerSid);
+  debug('Received token request for ' + workerSid);
 
   // Helper function to create Policy
   function buildWorkspacePolicy(options) {
