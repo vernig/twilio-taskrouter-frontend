@@ -1,5 +1,5 @@
 function debug(message) {
-  console.log(message)
+  console.log(`get-tr-token: ${message}`)
 }
 
 /** Return taskrouter token
