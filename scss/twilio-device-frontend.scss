@@ -1,0 +1,39 @@
+// @import '../node_modules/bootstrap/scss/bootstrap';
+
+// Twilio Device
+.twilio-device-container {
+
+}
+
+.twilio-device-status {
+  @extend .ml-2;
+}
+
+.twilio-device-client-id {
+  @extend .ml-2;
+}
+
+.twilio-device-actions-container {
+  @extend .mt-2;
+  @extend .text-center; // Set the mute nutton in the middle
+}
+
+.twilio-device-button-confirm {
+  @extend .btn;
+  @extend .btn-success; 
+  @extend .float-left; 
+  @extend .mx-2;
+}
+
+.twilio-device-button-mute {
+  @extend .btn;
+  @extend .btn-primary; 
+}
+
+.twilio-device-button-hangup {
+  @extend .btn;
+  @extend .btn-danger; 
+  @extend .float-right; 
+  @extend .mx-2;
+}
+
