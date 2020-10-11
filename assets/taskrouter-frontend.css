@@ -2375,7 +2375,7 @@ textarea.form-control {
   }
 }
 
-.btn, .worker-action-btn, .task-complete-btn, .reservation-reject-btn, .reservation-accept-btn {
+.btn, .twilio-device-button-hangup, .twilio-device-button-mute, .twilio-device-button-confirm, .worker-action-btn, .task-complete-btn, .reservation-reject-btn, .reservation-accept-btn {
   display: inline-block;
   font-weight: 400;
   color: #212529;
@@ -2391,26 +2391,29 @@ textarea.form-control {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .worker-action-btn, .task-complete-btn, .reservation-reject-btn, .reservation-accept-btn {
+  .btn, .twilio-device-button-hangup, .twilio-device-button-mute, .twilio-device-button-confirm, .worker-action-btn, .task-complete-btn, .reservation-reject-btn, .reservation-accept-btn {
     transition: none;
   }
 }
-.btn:hover, .worker-action-btn:hover, .task-complete-btn:hover, .reservation-reject-btn:hover, .reservation-accept-btn:hover {
+.btn:hover, .twilio-device-button-hangup:hover, .twilio-device-button-mute:hover, .twilio-device-button-confirm:hover, .worker-action-btn:hover, .task-complete-btn:hover, .reservation-reject-btn:hover, .reservation-accept-btn:hover {
   color: #212529;
   text-decoration: none;
 }
-.btn:focus, .worker-action-btn:focus, .task-complete-btn:focus, .reservation-reject-btn:focus, .reservation-accept-btn:focus, .btn.focus, .focus.worker-action-btn, .focus.task-complete-btn, .focus.reservation-reject-btn, .focus.reservation-accept-btn {
+.btn:focus, .twilio-device-button-hangup:focus, .twilio-device-button-mute:focus, .twilio-device-button-confirm:focus, .worker-action-btn:focus, .task-complete-btn:focus, .reservation-reject-btn:focus, .reservation-accept-btn:focus, .btn.focus, .focus.twilio-device-button-hangup, .focus.twilio-device-button-mute, .focus.twilio-device-button-confirm, .focus.worker-action-btn, .focus.task-complete-btn, .focus.reservation-reject-btn, .focus.reservation-accept-btn {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-.btn.disabled, .disabled.worker-action-btn, .disabled.task-complete-btn, .disabled.reservation-reject-btn, .disabled.reservation-accept-btn, .btn:disabled, .worker-action-btn:disabled, .task-complete-btn:disabled, .reservation-reject-btn:disabled, .reservation-accept-btn:disabled {
+.btn.disabled, .disabled.twilio-device-button-hangup, .disabled.twilio-device-button-mute, .disabled.twilio-device-button-confirm, .disabled.worker-action-btn, .disabled.task-complete-btn, .disabled.reservation-reject-btn, .disabled.reservation-accept-btn, .btn:disabled, .twilio-device-button-hangup:disabled, .twilio-device-button-mute:disabled, .twilio-device-button-confirm:disabled, .worker-action-btn:disabled, .task-complete-btn:disabled, .reservation-reject-btn:disabled, .reservation-accept-btn:disabled {
   opacity: 0.65;
 }
-.btn:not(:disabled):not(.disabled), .worker-action-btn:not(:disabled):not(.disabled), .task-complete-btn:not(:disabled):not(.disabled), .reservation-reject-btn:not(:disabled):not(.disabled), .reservation-accept-btn:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled), .twilio-device-button-hangup:not(:disabled):not(.disabled), .twilio-device-button-mute:not(:disabled):not(.disabled), .twilio-device-button-confirm:not(:disabled):not(.disabled), .worker-action-btn:not(:disabled):not(.disabled), .task-complete-btn:not(:disabled):not(.disabled), .reservation-reject-btn:not(:disabled):not(.disabled), .reservation-accept-btn:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
-a.btn.disabled, a.disabled.worker-action-btn, a.disabled.task-complete-btn, a.disabled.reservation-reject-btn, a.disabled.reservation-accept-btn,
+a.btn.disabled, a.disabled.twilio-device-button-hangup, a.disabled.twilio-device-button-mute, a.disabled.twilio-device-button-confirm, a.disabled.worker-action-btn, a.disabled.task-complete-btn, a.disabled.reservation-reject-btn, a.disabled.reservation-accept-btn,
 fieldset:disabled a.btn,
+fieldset:disabled a.twilio-device-button-hangup,
+fieldset:disabled a.twilio-device-button-mute,
+fieldset:disabled a.twilio-device-button-confirm,
 fieldset:disabled a.worker-action-btn,
 fieldset:disabled a.task-complete-btn,
 fieldset:disabled a.reservation-reject-btn,
@@ -2418,33 +2421,33 @@ fieldset:disabled a.reservation-accept-btn {
   pointer-events: none;
 }
 
-.btn-primary, .task-complete-btn, .reservation-accept-btn {
+.btn-primary, .twilio-device-button-mute, .task-complete-btn, .reservation-accept-btn {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:hover, .task-complete-btn:hover, .reservation-accept-btn:hover {
+.btn-primary:hover, .twilio-device-button-mute:hover, .task-complete-btn:hover, .reservation-accept-btn:hover {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
 }
-.btn-primary:focus, .task-complete-btn:focus, .reservation-accept-btn:focus, .btn-primary.focus, .focus.task-complete-btn, .focus.reservation-accept-btn {
+.btn-primary:focus, .twilio-device-button-mute:focus, .task-complete-btn:focus, .reservation-accept-btn:focus, .btn-primary.focus, .focus.twilio-device-button-mute, .focus.task-complete-btn, .focus.reservation-accept-btn {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
-.btn-primary.disabled, .disabled.task-complete-btn, .disabled.reservation-accept-btn, .btn-primary:disabled, .task-complete-btn:disabled, .reservation-accept-btn:disabled {
+.btn-primary.disabled, .disabled.twilio-device-button-mute, .disabled.task-complete-btn, .disabled.reservation-accept-btn, .btn-primary:disabled, .twilio-device-button-mute:disabled, .task-complete-btn:disabled, .reservation-accept-btn:disabled {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
-.btn-primary:not(:disabled):not(.disabled):active, .task-complete-btn:not(:disabled):not(.disabled):active, .reservation-accept-btn:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .task-complete-btn:not(:disabled):not(.disabled).active, .reservation-accept-btn:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .show > .dropdown-toggle.task-complete-btn, .show > .dropdown-toggle.reservation-accept-btn {
+.btn-primary:not(:disabled):not(.disabled):active, .twilio-device-button-mute:not(:disabled):not(.disabled):active, .task-complete-btn:not(:disabled):not(.disabled):active, .reservation-accept-btn:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .twilio-device-button-mute:not(:disabled):not(.disabled).active, .task-complete-btn:not(:disabled):not(.disabled).active, .reservation-accept-btn:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .show > .dropdown-toggle.twilio-device-button-mute, .show > .dropdown-toggle.task-complete-btn, .show > .dropdown-toggle.reservation-accept-btn {
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
 }
-.btn-primary:not(:disabled):not(.disabled):active:focus, .task-complete-btn:not(:disabled):not(.disabled):active:focus, .reservation-accept-btn:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .task-complete-btn:not(:disabled):not(.disabled).active:focus, .reservation-accept-btn:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .show > .dropdown-toggle.task-complete-btn:focus, .show > .dropdown-toggle.reservation-accept-btn:focus {
+.btn-primary:not(:disabled):not(.disabled):active:focus, .twilio-device-button-mute:not(:disabled):not(.disabled):active:focus, .task-complete-btn:not(:disabled):not(.disabled):active:focus, .reservation-accept-btn:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .twilio-device-button-mute:not(:disabled):not(.disabled).active:focus, .task-complete-btn:not(:disabled):not(.disabled).active:focus, .reservation-accept-btn:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .show > .dropdown-toggle.twilio-device-button-mute:focus, .show > .dropdown-toggle.task-complete-btn:focus, .show > .dropdown-toggle.reservation-accept-btn:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
@@ -2478,33 +2481,33 @@ fieldset:disabled a.reservation-accept-btn {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
-.btn-success {
+.btn-success, .twilio-device-button-confirm {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-success:hover {
+.btn-success:hover, .twilio-device-button-confirm:hover {
   color: #fff;
   background-color: #218838;
   border-color: #1e7e34;
 }
-.btn-success:focus, .btn-success.focus {
+.btn-success:focus, .twilio-device-button-confirm:focus, .btn-success.focus, .focus.twilio-device-button-confirm {
   color: #fff;
   background-color: #218838;
   border-color: #1e7e34;
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
-.btn-success.disabled, .btn-success:disabled {
+.btn-success.disabled, .disabled.twilio-device-button-confirm, .btn-success:disabled, .twilio-device-button-confirm:disabled {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745;
 }
-.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
+.btn-success:not(:disabled):not(.disabled):active, .twilio-device-button-confirm:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .twilio-device-button-confirm:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle, .show > .dropdown-toggle.twilio-device-button-confirm {
   color: #fff;
   background-color: #1e7e34;
   border-color: #1c7430;
 }
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
+.btn-success:not(:disabled):not(.disabled):active:focus, .twilio-device-button-confirm:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .twilio-device-button-confirm:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus, .show > .dropdown-toggle.twilio-device-button-confirm:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 
@@ -2568,33 +2571,33 @@ fieldset:disabled a.reservation-accept-btn {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
-.btn-danger, .reservation-reject-btn {
+.btn-danger, .twilio-device-button-hangup, .reservation-reject-btn {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-danger:hover, .reservation-reject-btn:hover {
+.btn-danger:hover, .twilio-device-button-hangup:hover, .reservation-reject-btn:hover {
   color: #fff;
   background-color: #c82333;
   border-color: #bd2130;
 }
-.btn-danger:focus, .reservation-reject-btn:focus, .btn-danger.focus, .focus.reservation-reject-btn {
+.btn-danger:focus, .twilio-device-button-hangup:focus, .reservation-reject-btn:focus, .btn-danger.focus, .focus.twilio-device-button-hangup, .focus.reservation-reject-btn {
   color: #fff;
   background-color: #c82333;
   border-color: #bd2130;
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
-.btn-danger.disabled, .disabled.reservation-reject-btn, .btn-danger:disabled, .reservation-reject-btn:disabled {
+.btn-danger.disabled, .disabled.twilio-device-button-hangup, .disabled.reservation-reject-btn, .btn-danger:disabled, .twilio-device-button-hangup:disabled, .reservation-reject-btn:disabled {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-danger:not(:disabled):not(.disabled):active, .reservation-reject-btn:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .reservation-reject-btn:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle, .show > .dropdown-toggle.reservation-reject-btn {
+.btn-danger:not(:disabled):not(.disabled):active, .twilio-device-button-hangup:not(:disabled):not(.disabled):active, .reservation-reject-btn:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .twilio-device-button-hangup:not(:disabled):not(.disabled).active, .reservation-reject-btn:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle, .show > .dropdown-toggle.twilio-device-button-hangup, .show > .dropdown-toggle.reservation-reject-btn {
   color: #fff;
   background-color: #bd2130;
   border-color: #b21f2d;
 }
-.btn-danger:not(:disabled):not(.disabled):active:focus, .reservation-reject-btn:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .reservation-reject-btn:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus, .show > .dropdown-toggle.reservation-reject-btn:focus {
+.btn-danger:not(:disabled):not(.disabled):active:focus, .twilio-device-button-hangup:not(:disabled):not(.disabled):active:focus, .reservation-reject-btn:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .twilio-device-button-hangup:not(:disabled):not(.disabled).active:focus, .reservation-reject-btn:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus, .show > .dropdown-toggle.twilio-device-button-hangup:focus, .show > .dropdown-toggle.reservation-reject-btn:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
@@ -2875,14 +2878,14 @@ fieldset:disabled a.reservation-accept-btn {
   pointer-events: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .worker-action-btn, .btn-group-lg > .task-complete-btn, .btn-group-lg > .reservation-reject-btn, .btn-group-lg > .reservation-accept-btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .twilio-device-button-hangup, .btn-group-lg > .twilio-device-button-mute, .btn-group-lg > .twilio-device-button-confirm, .btn-group-lg > .worker-action-btn, .btn-group-lg > .task-complete-btn, .btn-group-lg > .reservation-reject-btn, .btn-group-lg > .reservation-accept-btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .worker-action-btn, .btn-group-sm > .task-complete-btn, .btn-group-sm > .reservation-reject-btn, .btn-group-sm > .reservation-accept-btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .twilio-device-button-hangup, .btn-group-sm > .twilio-device-button-mute, .btn-group-sm > .twilio-device-button-confirm, .btn-group-sm > .worker-action-btn, .btn-group-sm > .task-complete-btn, .btn-group-sm > .reservation-reject-btn, .btn-group-sm > .reservation-accept-btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3170,8 +3173,11 @@ input[type=button].btn-block {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .worker-action-btn, .btn-group > .task-complete-btn, .btn-group > .reservation-reject-btn, .btn-group > .reservation-accept-btn,
+.btn-group > .btn, .btn-group > .twilio-device-button-hangup, .btn-group > .twilio-device-button-mute, .btn-group > .twilio-device-button-confirm, .btn-group > .worker-action-btn, .btn-group > .task-complete-btn, .btn-group > .reservation-reject-btn, .btn-group > .reservation-accept-btn,
 .btn-group-vertical > .btn,
+.btn-group-vertical > .twilio-device-button-hangup,
+.btn-group-vertical > .twilio-device-button-mute,
+.btn-group-vertical > .twilio-device-button-confirm,
 .btn-group-vertical > .worker-action-btn,
 .btn-group-vertical > .task-complete-btn,
 .btn-group-vertical > .reservation-reject-btn,
@@ -3179,26 +3185,38 @@ input[type=button].btn-block {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn:hover, .btn-group > .worker-action-btn:hover, .btn-group > .task-complete-btn:hover, .btn-group > .reservation-reject-btn:hover, .btn-group > .reservation-accept-btn:hover,
+.btn-group > .btn:hover, .btn-group > .twilio-device-button-hangup:hover, .btn-group > .twilio-device-button-mute:hover, .btn-group > .twilio-device-button-confirm:hover, .btn-group > .worker-action-btn:hover, .btn-group > .task-complete-btn:hover, .btn-group > .reservation-reject-btn:hover, .btn-group > .reservation-accept-btn:hover,
 .btn-group-vertical > .btn:hover,
+.btn-group-vertical > .twilio-device-button-hangup:hover,
+.btn-group-vertical > .twilio-device-button-mute:hover,
+.btn-group-vertical > .twilio-device-button-confirm:hover,
 .btn-group-vertical > .worker-action-btn:hover,
 .btn-group-vertical > .task-complete-btn:hover,
 .btn-group-vertical > .reservation-reject-btn:hover,
 .btn-group-vertical > .reservation-accept-btn:hover {
   z-index: 1;
 }
-.btn-group > .btn:focus, .btn-group > .worker-action-btn:focus, .btn-group > .task-complete-btn:focus, .btn-group > .reservation-reject-btn:focus, .btn-group > .reservation-accept-btn:focus, .btn-group > .btn:active, .btn-group > .worker-action-btn:active, .btn-group > .task-complete-btn:active, .btn-group > .reservation-reject-btn:active, .btn-group > .reservation-accept-btn:active, .btn-group > .btn.active, .btn-group > .active.worker-action-btn, .btn-group > .active.task-complete-btn, .btn-group > .active.reservation-reject-btn, .btn-group > .active.reservation-accept-btn,
+.btn-group > .btn:focus, .btn-group > .twilio-device-button-hangup:focus, .btn-group > .twilio-device-button-mute:focus, .btn-group > .twilio-device-button-confirm:focus, .btn-group > .worker-action-btn:focus, .btn-group > .task-complete-btn:focus, .btn-group > .reservation-reject-btn:focus, .btn-group > .reservation-accept-btn:focus, .btn-group > .btn:active, .btn-group > .twilio-device-button-hangup:active, .btn-group > .twilio-device-button-mute:active, .btn-group > .twilio-device-button-confirm:active, .btn-group > .worker-action-btn:active, .btn-group > .task-complete-btn:active, .btn-group > .reservation-reject-btn:active, .btn-group > .reservation-accept-btn:active, .btn-group > .btn.active, .btn-group > .active.twilio-device-button-hangup, .btn-group > .active.twilio-device-button-mute, .btn-group > .active.twilio-device-button-confirm, .btn-group > .active.worker-action-btn, .btn-group > .active.task-complete-btn, .btn-group > .active.reservation-reject-btn, .btn-group > .active.reservation-accept-btn,
 .btn-group-vertical > .btn:focus,
+.btn-group-vertical > .twilio-device-button-hangup:focus,
+.btn-group-vertical > .twilio-device-button-mute:focus,
+.btn-group-vertical > .twilio-device-button-confirm:focus,
 .btn-group-vertical > .worker-action-btn:focus,
 .btn-group-vertical > .task-complete-btn:focus,
 .btn-group-vertical > .reservation-reject-btn:focus,
 .btn-group-vertical > .reservation-accept-btn:focus,
 .btn-group-vertical > .btn:active,
+.btn-group-vertical > .twilio-device-button-hangup:active,
+.btn-group-vertical > .twilio-device-button-mute:active,
+.btn-group-vertical > .twilio-device-button-confirm:active,
 .btn-group-vertical > .worker-action-btn:active,
 .btn-group-vertical > .task-complete-btn:active,
 .btn-group-vertical > .reservation-reject-btn:active,
 .btn-group-vertical > .reservation-accept-btn:active,
 .btn-group-vertical > .btn.active,
+.btn-group-vertical > .active.twilio-device-button-hangup,
+.btn-group-vertical > .active.twilio-device-button-mute,
+.btn-group-vertical > .active.twilio-device-button-confirm,
 .btn-group-vertical > .active.worker-action-btn,
 .btn-group-vertical > .active.task-complete-btn,
 .btn-group-vertical > .active.reservation-reject-btn,
@@ -3215,12 +3233,15 @@ input[type=button].btn-block {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child), .btn-group > .worker-action-btn:not(:first-child), .btn-group > .task-complete-btn:not(:first-child), .btn-group > .reservation-reject-btn:not(:first-child), .btn-group > .reservation-accept-btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .twilio-device-button-hangup:not(:first-child), .btn-group > .twilio-device-button-mute:not(:first-child), .btn-group > .twilio-device-button-confirm:not(:first-child), .btn-group > .worker-action-btn:not(:first-child), .btn-group > .task-complete-btn:not(:first-child), .btn-group > .reservation-reject-btn:not(:first-child), .btn-group > .reservation-accept-btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .worker-action-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .task-complete-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .reservation-reject-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .reservation-accept-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .twilio-device-button-hangup:not(:last-child):not(.dropdown-toggle), .btn-group > .twilio-device-button-mute:not(:last-child):not(.dropdown-toggle), .btn-group > .twilio-device-button-confirm:not(:last-child):not(.dropdown-toggle), .btn-group > .worker-action-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .task-complete-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .reservation-reject-btn:not(:last-child):not(.dropdown-toggle), .btn-group > .reservation-accept-btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn-group:not(:last-child) > .twilio-device-button-hangup,
+.btn-group > .btn-group:not(:last-child) > .twilio-device-button-mute,
+.btn-group > .btn-group:not(:last-child) > .twilio-device-button-confirm,
 .btn-group > .btn-group:not(:last-child) > .worker-action-btn,
 .btn-group > .btn-group:not(:last-child) > .task-complete-btn,
 .btn-group > .btn-group:not(:last-child) > .reservation-reject-btn,
@@ -3228,8 +3249,11 @@ input[type=button].btn-block {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:not(:first-child), .btn-group > .worker-action-btn:not(:first-child), .btn-group > .task-complete-btn:not(:first-child), .btn-group > .reservation-reject-btn:not(:first-child), .btn-group > .reservation-accept-btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .twilio-device-button-hangup:not(:first-child), .btn-group > .twilio-device-button-mute:not(:first-child), .btn-group > .twilio-device-button-confirm:not(:first-child), .btn-group > .worker-action-btn:not(:first-child), .btn-group > .task-complete-btn:not(:first-child), .btn-group > .reservation-reject-btn:not(:first-child), .btn-group > .reservation-accept-btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn-group:not(:first-child) > .twilio-device-button-hangup,
+.btn-group > .btn-group:not(:first-child) > .twilio-device-button-mute,
+.btn-group > .btn-group:not(:first-child) > .twilio-device-button-confirm,
 .btn-group > .btn-group:not(:first-child) > .worker-action-btn,
 .btn-group > .btn-group:not(:first-child) > .task-complete-btn,
 .btn-group > .btn-group:not(:first-child) > .reservation-reject-btn,
@@ -3249,12 +3273,12 @@ input[type=button].btn-block {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .worker-action-btn + .dropdown-toggle-split, .btn-group-sm > .task-complete-btn + .dropdown-toggle-split, .btn-group-sm > .reservation-reject-btn + .dropdown-toggle-split, .btn-group-sm > .reservation-accept-btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .twilio-device-button-hangup + .dropdown-toggle-split, .btn-group-sm > .twilio-device-button-mute + .dropdown-toggle-split, .btn-group-sm > .twilio-device-button-confirm + .dropdown-toggle-split, .btn-group-sm > .worker-action-btn + .dropdown-toggle-split, .btn-group-sm > .task-complete-btn + .dropdown-toggle-split, .btn-group-sm > .reservation-reject-btn + .dropdown-toggle-split, .btn-group-sm > .reservation-accept-btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .worker-action-btn + .dropdown-toggle-split, .btn-group-lg > .task-complete-btn + .dropdown-toggle-split, .btn-group-lg > .reservation-reject-btn + .dropdown-toggle-split, .btn-group-lg > .reservation-accept-btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .twilio-device-button-hangup + .dropdown-toggle-split, .btn-group-lg > .twilio-device-button-mute + .dropdown-toggle-split, .btn-group-lg > .twilio-device-button-confirm + .dropdown-toggle-split, .btn-group-lg > .worker-action-btn + .dropdown-toggle-split, .btn-group-lg > .task-complete-btn + .dropdown-toggle-split, .btn-group-lg > .reservation-reject-btn + .dropdown-toggle-split, .btn-group-lg > .reservation-accept-btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3264,16 +3288,19 @@ input[type=button].btn-block {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .worker-action-btn, .btn-group-vertical > .task-complete-btn, .btn-group-vertical > .reservation-reject-btn, .btn-group-vertical > .reservation-accept-btn,
+.btn-group-vertical > .btn, .btn-group-vertical > .twilio-device-button-hangup, .btn-group-vertical > .twilio-device-button-mute, .btn-group-vertical > .twilio-device-button-confirm, .btn-group-vertical > .worker-action-btn, .btn-group-vertical > .task-complete-btn, .btn-group-vertical > .reservation-reject-btn, .btn-group-vertical > .reservation-accept-btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .worker-action-btn:not(:first-child), .btn-group-vertical > .task-complete-btn:not(:first-child), .btn-group-vertical > .reservation-reject-btn:not(:first-child), .btn-group-vertical > .reservation-accept-btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .twilio-device-button-hangup:not(:first-child), .btn-group-vertical > .twilio-device-button-mute:not(:first-child), .btn-group-vertical > .twilio-device-button-confirm:not(:first-child), .btn-group-vertical > .worker-action-btn:not(:first-child), .btn-group-vertical > .task-complete-btn:not(:first-child), .btn-group-vertical > .reservation-reject-btn:not(:first-child), .btn-group-vertical > .reservation-accept-btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .worker-action-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .task-complete-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .reservation-reject-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .reservation-accept-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .twilio-device-button-hangup:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .twilio-device-button-mute:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .twilio-device-button-confirm:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .worker-action-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .task-complete-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .reservation-reject-btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .reservation-accept-btn:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .twilio-device-button-hangup,
+.btn-group-vertical > .btn-group:not(:last-child) > .twilio-device-button-mute,
+.btn-group-vertical > .btn-group:not(:last-child) > .twilio-device-button-confirm,
 .btn-group-vertical > .btn-group:not(:last-child) > .worker-action-btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .task-complete-btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .reservation-reject-btn,
@@ -3281,8 +3308,11 @@ input[type=button].btn-block {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .worker-action-btn:not(:first-child), .btn-group-vertical > .task-complete-btn:not(:first-child), .btn-group-vertical > .reservation-reject-btn:not(:first-child), .btn-group-vertical > .reservation-accept-btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .twilio-device-button-hangup:not(:first-child), .btn-group-vertical > .twilio-device-button-mute:not(:first-child), .btn-group-vertical > .twilio-device-button-confirm:not(:first-child), .btn-group-vertical > .worker-action-btn:not(:first-child), .btn-group-vertical > .task-complete-btn:not(:first-child), .btn-group-vertical > .reservation-reject-btn:not(:first-child), .btn-group-vertical > .reservation-accept-btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .twilio-device-button-hangup,
+.btn-group-vertical > .btn-group:not(:first-child) > .twilio-device-button-mute,
+.btn-group-vertical > .btn-group:not(:first-child) > .twilio-device-button-confirm,
 .btn-group-vertical > .btn-group:not(:first-child) > .worker-action-btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .task-complete-btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .reservation-reject-btn,
@@ -3291,16 +3321,22 @@ input[type=button].btn-block {
   border-top-right-radius: 0;
 }
 
-.btn-group-toggle > .btn, .btn-group-toggle > .worker-action-btn, .btn-group-toggle > .task-complete-btn, .btn-group-toggle > .reservation-reject-btn, .btn-group-toggle > .reservation-accept-btn,
+.btn-group-toggle > .btn, .btn-group-toggle > .twilio-device-button-hangup, .btn-group-toggle > .twilio-device-button-mute, .btn-group-toggle > .twilio-device-button-confirm, .btn-group-toggle > .worker-action-btn, .btn-group-toggle > .task-complete-btn, .btn-group-toggle > .reservation-reject-btn, .btn-group-toggle > .reservation-accept-btn,
 .btn-group-toggle > .btn-group > .btn,
+.btn-group-toggle > .btn-group > .twilio-device-button-hangup,
+.btn-group-toggle > .btn-group > .twilio-device-button-mute,
+.btn-group-toggle > .btn-group > .twilio-device-button-confirm,
 .btn-group-toggle > .btn-group > .worker-action-btn,
 .btn-group-toggle > .btn-group > .task-complete-btn,
 .btn-group-toggle > .btn-group > .reservation-reject-btn,
 .btn-group-toggle > .btn-group > .reservation-accept-btn {
   margin-bottom: 0;
 }
-.btn-group-toggle > .btn input[type=radio], .btn-group-toggle > .worker-action-btn input[type=radio], .btn-group-toggle > .task-complete-btn input[type=radio], .btn-group-toggle > .reservation-reject-btn input[type=radio], .btn-group-toggle > .reservation-accept-btn input[type=radio],
+.btn-group-toggle > .btn input[type=radio], .btn-group-toggle > .twilio-device-button-hangup input[type=radio], .btn-group-toggle > .twilio-device-button-mute input[type=radio], .btn-group-toggle > .twilio-device-button-confirm input[type=radio], .btn-group-toggle > .worker-action-btn input[type=radio], .btn-group-toggle > .task-complete-btn input[type=radio], .btn-group-toggle > .reservation-reject-btn input[type=radio], .btn-group-toggle > .reservation-accept-btn input[type=radio],
 .btn-group-toggle > .btn input[type=checkbox],
+.btn-group-toggle > .twilio-device-button-hangup input[type=checkbox],
+.btn-group-toggle > .twilio-device-button-mute input[type=checkbox],
+.btn-group-toggle > .twilio-device-button-confirm input[type=checkbox],
 .btn-group-toggle > .worker-action-btn input[type=checkbox],
 .btn-group-toggle > .task-complete-btn input[type=checkbox],
 .btn-group-toggle > .reservation-reject-btn input[type=checkbox],
@@ -3378,8 +3414,11 @@ input[type=button].btn-block {
 .input-group-append {
   display: flex;
 }
-.input-group-prepend .btn, .input-group-prepend .worker-action-btn, .input-group-prepend .task-complete-btn, .input-group-prepend .reservation-reject-btn, .input-group-prepend .reservation-accept-btn,
+.input-group-prepend .btn, .input-group-prepend .twilio-device-button-hangup, .input-group-prepend .twilio-device-button-mute, .input-group-prepend .twilio-device-button-confirm, .input-group-prepend .worker-action-btn, .input-group-prepend .task-complete-btn, .input-group-prepend .reservation-reject-btn, .input-group-prepend .reservation-accept-btn,
 .input-group-append .btn,
+.input-group-append .twilio-device-button-hangup,
+.input-group-append .twilio-device-button-mute,
+.input-group-append .twilio-device-button-confirm,
 .input-group-append .worker-action-btn,
 .input-group-append .task-complete-btn,
 .input-group-append .reservation-reject-btn,
@@ -3387,58 +3426,112 @@ input[type=button].btn-block {
   position: relative;
   z-index: 2;
 }
-.input-group-prepend .btn:focus, .input-group-prepend .worker-action-btn:focus, .input-group-prepend .task-complete-btn:focus, .input-group-prepend .reservation-reject-btn:focus, .input-group-prepend .reservation-accept-btn:focus,
+.input-group-prepend .btn:focus, .input-group-prepend .twilio-device-button-hangup:focus, .input-group-prepend .twilio-device-button-mute:focus, .input-group-prepend .twilio-device-button-confirm:focus, .input-group-prepend .worker-action-btn:focus, .input-group-prepend .task-complete-btn:focus, .input-group-prepend .reservation-reject-btn:focus, .input-group-prepend .reservation-accept-btn:focus,
 .input-group-append .btn:focus,
+.input-group-append .twilio-device-button-hangup:focus,
+.input-group-append .twilio-device-button-mute:focus,
+.input-group-append .twilio-device-button-confirm:focus,
 .input-group-append .worker-action-btn:focus,
 .input-group-append .task-complete-btn:focus,
 .input-group-append .reservation-reject-btn:focus,
 .input-group-append .reservation-accept-btn:focus {
   z-index: 3;
 }
-.input-group-prepend .btn + .btn, .input-group-prepend .worker-action-btn + .btn, .input-group-prepend .btn + .worker-action-btn, .input-group-prepend .worker-action-btn + .worker-action-btn, .input-group-prepend .task-complete-btn + .btn, .input-group-prepend .task-complete-btn + .worker-action-btn, .input-group-prepend .btn + .task-complete-btn, .input-group-prepend .worker-action-btn + .task-complete-btn, .input-group-prepend .task-complete-btn + .task-complete-btn, .input-group-prepend .reservation-reject-btn + .btn, .input-group-prepend .reservation-reject-btn + .worker-action-btn, .input-group-prepend .reservation-reject-btn + .task-complete-btn, .input-group-prepend .btn + .reservation-reject-btn, .input-group-prepend .worker-action-btn + .reservation-reject-btn, .input-group-prepend .task-complete-btn + .reservation-reject-btn, .input-group-prepend .reservation-reject-btn + .reservation-reject-btn, .input-group-prepend .reservation-accept-btn + .btn, .input-group-prepend .reservation-accept-btn + .worker-action-btn, .input-group-prepend .reservation-accept-btn + .task-complete-btn, .input-group-prepend .reservation-accept-btn + .reservation-reject-btn, .input-group-prepend .btn + .reservation-accept-btn, .input-group-prepend .worker-action-btn + .reservation-accept-btn, .input-group-prepend .task-complete-btn + .reservation-accept-btn, .input-group-prepend .reservation-reject-btn + .reservation-accept-btn, .input-group-prepend .reservation-accept-btn + .reservation-accept-btn,
+.input-group-prepend .btn + .btn, .input-group-prepend .twilio-device-button-hangup + .btn, .input-group-prepend .btn + .twilio-device-button-hangup, .input-group-prepend .twilio-device-button-hangup + .twilio-device-button-hangup, .input-group-prepend .twilio-device-button-mute + .btn, .input-group-prepend .twilio-device-button-mute + .twilio-device-button-hangup, .input-group-prepend .btn + .twilio-device-button-mute, .input-group-prepend .twilio-device-button-hangup + .twilio-device-button-mute, .input-group-prepend .twilio-device-button-mute + .twilio-device-button-mute, .input-group-prepend .twilio-device-button-confirm + .btn, .input-group-prepend .twilio-device-button-confirm + .twilio-device-button-hangup, .input-group-prepend .twilio-device-button-confirm + .twilio-device-button-mute, .input-group-prepend .btn + .twilio-device-button-confirm, .input-group-prepend .twilio-device-button-hangup + .twilio-device-button-confirm, .input-group-prepend .twilio-device-button-mute + .twilio-device-button-confirm, .input-group-prepend .twilio-device-button-confirm + .twilio-device-button-confirm, .input-group-prepend .worker-action-btn + .btn, .input-group-prepend .worker-action-btn + .twilio-device-button-hangup, .input-group-prepend .worker-action-btn + .twilio-device-button-mute, .input-group-prepend .worker-action-btn + .twilio-device-button-confirm, .input-group-prepend .btn + .worker-action-btn, .input-group-prepend .twilio-device-button-hangup + .worker-action-btn, .input-group-prepend .twilio-device-button-mute + .worker-action-btn, .input-group-prepend .twilio-device-button-confirm + .worker-action-btn, .input-group-prepend .worker-action-btn + .worker-action-btn, .input-group-prepend .task-complete-btn + .btn, .input-group-prepend .task-complete-btn + .twilio-device-button-hangup, .input-group-prepend .task-complete-btn + .twilio-device-button-mute, .input-group-prepend .task-complete-btn + .twilio-device-button-confirm, .input-group-prepend .task-complete-btn + .worker-action-btn, .input-group-prepend .btn + .task-complete-btn, .input-group-prepend .twilio-device-button-hangup + .task-complete-btn, .input-group-prepend .twilio-device-button-mute + .task-complete-btn, .input-group-prepend .twilio-device-button-confirm + .task-complete-btn, .input-group-prepend .worker-action-btn + .task-complete-btn, .input-group-prepend .task-complete-btn + .task-complete-btn, .input-group-prepend .reservation-reject-btn + .btn, .input-group-prepend .reservation-reject-btn + .twilio-device-button-hangup, .input-group-prepend .reservation-reject-btn + .twilio-device-button-mute, .input-group-prepend .reservation-reject-btn + .twilio-device-button-confirm, .input-group-prepend .reservation-reject-btn + .worker-action-btn, .input-group-prepend .reservation-reject-btn + .task-complete-btn, .input-group-prepend .btn + .reservation-reject-btn, .input-group-prepend .twilio-device-button-hangup + .reservation-reject-btn, .input-group-prepend .twilio-device-button-mute + .reservation-reject-btn, .input-group-prepend .twilio-device-button-confirm + .reservation-reject-btn, .input-group-prepend .worker-action-btn + .reservation-reject-btn, .input-group-prepend .task-complete-btn + .reservation-reject-btn, .input-group-prepend .reservation-reject-btn + .reservation-reject-btn, .input-group-prepend .reservation-accept-btn + .btn, .input-group-prepend .reservation-accept-btn + .twilio-device-button-hangup, .input-group-prepend .reservation-accept-btn + .twilio-device-button-mute, .input-group-prepend .reservation-accept-btn + .twilio-device-button-confirm, .input-group-prepend .reservation-accept-btn + .worker-action-btn, .input-group-prepend .reservation-accept-btn + .task-complete-btn, .input-group-prepend .reservation-accept-btn + .reservation-reject-btn, .input-group-prepend .btn + .reservation-accept-btn, .input-group-prepend .twilio-device-button-hangup + .reservation-accept-btn, .input-group-prepend .twilio-device-button-mute + .reservation-accept-btn, .input-group-prepend .twilio-device-button-confirm + .reservation-accept-btn, .input-group-prepend .worker-action-btn + .reservation-accept-btn, .input-group-prepend .task-complete-btn + .reservation-accept-btn, .input-group-prepend .reservation-reject-btn + .reservation-accept-btn, .input-group-prepend .reservation-accept-btn + .reservation-accept-btn,
 .input-group-prepend .btn + .input-group-text,
+.input-group-prepend .twilio-device-button-hangup + .input-group-text,
+.input-group-prepend .twilio-device-button-mute + .input-group-text,
+.input-group-prepend .twilio-device-button-confirm + .input-group-text,
 .input-group-prepend .worker-action-btn + .input-group-text,
 .input-group-prepend .task-complete-btn + .input-group-text,
 .input-group-prepend .reservation-reject-btn + .input-group-text,
 .input-group-prepend .reservation-accept-btn + .input-group-text,
 .input-group-prepend .input-group-text + .input-group-text,
 .input-group-prepend .input-group-text + .btn,
+.input-group-prepend .input-group-text + .twilio-device-button-hangup,
+.input-group-prepend .input-group-text + .twilio-device-button-mute,
+.input-group-prepend .input-group-text + .twilio-device-button-confirm,
 .input-group-prepend .input-group-text + .worker-action-btn,
 .input-group-prepend .input-group-text + .task-complete-btn,
 .input-group-prepend .input-group-text + .reservation-reject-btn,
 .input-group-prepend .input-group-text + .reservation-accept-btn,
 .input-group-append .btn + .btn,
+.input-group-append .twilio-device-button-hangup + .btn,
+.input-group-append .btn + .twilio-device-button-hangup,
+.input-group-append .twilio-device-button-hangup + .twilio-device-button-hangup,
+.input-group-append .twilio-device-button-mute + .btn,
+.input-group-append .twilio-device-button-mute + .twilio-device-button-hangup,
+.input-group-append .btn + .twilio-device-button-mute,
+.input-group-append .twilio-device-button-hangup + .twilio-device-button-mute,
+.input-group-append .twilio-device-button-mute + .twilio-device-button-mute,
+.input-group-append .twilio-device-button-confirm + .btn,
+.input-group-append .twilio-device-button-confirm + .twilio-device-button-hangup,
+.input-group-append .twilio-device-button-confirm + .twilio-device-button-mute,
+.input-group-append .btn + .twilio-device-button-confirm,
+.input-group-append .twilio-device-button-hangup + .twilio-device-button-confirm,
+.input-group-append .twilio-device-button-mute + .twilio-device-button-confirm,
+.input-group-append .twilio-device-button-confirm + .twilio-device-button-confirm,
 .input-group-append .worker-action-btn + .btn,
+.input-group-append .worker-action-btn + .twilio-device-button-hangup,
+.input-group-append .worker-action-btn + .twilio-device-button-mute,
+.input-group-append .worker-action-btn + .twilio-device-button-confirm,
 .input-group-append .btn + .worker-action-btn,
+.input-group-append .twilio-device-button-hangup + .worker-action-btn,
+.input-group-append .twilio-device-button-mute + .worker-action-btn,
+.input-group-append .twilio-device-button-confirm + .worker-action-btn,
 .input-group-append .worker-action-btn + .worker-action-btn,
 .input-group-append .task-complete-btn + .btn,
+.input-group-append .task-complete-btn + .twilio-device-button-hangup,
+.input-group-append .task-complete-btn + .twilio-device-button-mute,
+.input-group-append .task-complete-btn + .twilio-device-button-confirm,
 .input-group-append .task-complete-btn + .worker-action-btn,
 .input-group-append .btn + .task-complete-btn,
+.input-group-append .twilio-device-button-hangup + .task-complete-btn,
+.input-group-append .twilio-device-button-mute + .task-complete-btn,
+.input-group-append .twilio-device-button-confirm + .task-complete-btn,
 .input-group-append .worker-action-btn + .task-complete-btn,
 .input-group-append .task-complete-btn + .task-complete-btn,
 .input-group-append .reservation-reject-btn + .btn,
+.input-group-append .reservation-reject-btn + .twilio-device-button-hangup,
+.input-group-append .reservation-reject-btn + .twilio-device-button-mute,
+.input-group-append .reservation-reject-btn + .twilio-device-button-confirm,
 .input-group-append .reservation-reject-btn + .worker-action-btn,
 .input-group-append .reservation-reject-btn + .task-complete-btn,
 .input-group-append .btn + .reservation-reject-btn,
+.input-group-append .twilio-device-button-hangup + .reservation-reject-btn,
+.input-group-append .twilio-device-button-mute + .reservation-reject-btn,
+.input-group-append .twilio-device-button-confirm + .reservation-reject-btn,
 .input-group-append .worker-action-btn + .reservation-reject-btn,
 .input-group-append .task-complete-btn + .reservation-reject-btn,
 .input-group-append .reservation-reject-btn + .reservation-reject-btn,
 .input-group-append .reservation-accept-btn + .btn,
+.input-group-append .reservation-accept-btn + .twilio-device-button-hangup,
+.input-group-append .reservation-accept-btn + .twilio-device-button-mute,
+.input-group-append .reservation-accept-btn + .twilio-device-button-confirm,
 .input-group-append .reservation-accept-btn + .worker-action-btn,
 .input-group-append .reservation-accept-btn + .task-complete-btn,
 .input-group-append .reservation-accept-btn + .reservation-reject-btn,
 .input-group-append .btn + .reservation-accept-btn,
+.input-group-append .twilio-device-button-hangup + .reservation-accept-btn,
+.input-group-append .twilio-device-button-mute + .reservation-accept-btn,
+.input-group-append .twilio-device-button-confirm + .reservation-accept-btn,
 .input-group-append .worker-action-btn + .reservation-accept-btn,
 .input-group-append .task-complete-btn + .reservation-accept-btn,
 .input-group-append .reservation-reject-btn + .reservation-accept-btn,
 .input-group-append .reservation-accept-btn + .reservation-accept-btn,
 .input-group-append .btn + .input-group-text,
+.input-group-append .twilio-device-button-hangup + .input-group-text,
+.input-group-append .twilio-device-button-mute + .input-group-text,
+.input-group-append .twilio-device-button-confirm + .input-group-text,
 .input-group-append .worker-action-btn + .input-group-text,
 .input-group-append .task-complete-btn + .input-group-text,
 .input-group-append .reservation-reject-btn + .input-group-text,
 .input-group-append .reservation-accept-btn + .input-group-text,
 .input-group-append .input-group-text + .input-group-text,
 .input-group-append .input-group-text + .btn,
+.input-group-append .input-group-text + .twilio-device-button-hangup,
+.input-group-append .input-group-text + .twilio-device-button-mute,
+.input-group-append .input-group-text + .twilio-device-button-confirm,
 .input-group-append .input-group-text + .worker-action-btn,
 .input-group-append .input-group-text + .task-complete-btn,
 .input-group-append .input-group-text + .reservation-reject-btn,
@@ -3484,11 +3577,17 @@ input[type=button].btn-block {
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-prepend > .twilio-device-button-hangup,
+.input-group-lg > .input-group-prepend > .twilio-device-button-mute,
+.input-group-lg > .input-group-prepend > .twilio-device-button-confirm,
 .input-group-lg > .input-group-prepend > .worker-action-btn,
 .input-group-lg > .input-group-prepend > .task-complete-btn,
 .input-group-lg > .input-group-prepend > .reservation-reject-btn,
 .input-group-lg > .input-group-prepend > .reservation-accept-btn,
 .input-group-lg > .input-group-append > .btn,
+.input-group-lg > .input-group-append > .twilio-device-button-hangup,
+.input-group-lg > .input-group-append > .twilio-device-button-mute,
+.input-group-lg > .input-group-append > .twilio-device-button-confirm,
 .input-group-lg > .input-group-append > .worker-action-btn,
 .input-group-lg > .input-group-append > .task-complete-btn,
 .input-group-lg > .input-group-append > .reservation-reject-btn,
@@ -3509,11 +3608,17 @@ input[type=button].btn-block {
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-prepend > .twilio-device-button-hangup,
+.input-group-sm > .input-group-prepend > .twilio-device-button-mute,
+.input-group-sm > .input-group-prepend > .twilio-device-button-confirm,
 .input-group-sm > .input-group-prepend > .worker-action-btn,
 .input-group-sm > .input-group-prepend > .task-complete-btn,
 .input-group-sm > .input-group-prepend > .reservation-reject-btn,
 .input-group-sm > .input-group-prepend > .reservation-accept-btn,
 .input-group-sm > .input-group-append > .btn,
+.input-group-sm > .input-group-append > .twilio-device-button-hangup,
+.input-group-sm > .input-group-append > .twilio-device-button-mute,
+.input-group-sm > .input-group-append > .twilio-device-button-confirm,
 .input-group-sm > .input-group-append > .worker-action-btn,
 .input-group-sm > .input-group-append > .task-complete-btn,
 .input-group-sm > .input-group-append > .reservation-reject-btn,
@@ -3529,15 +3634,21 @@ input[type=button].btn-block {
   padding-right: 1.75rem;
 }
 
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .worker-action-btn, .input-group > .input-group-prepend > .task-complete-btn, .input-group > .input-group-prepend > .reservation-reject-btn, .input-group > .input-group-prepend > .reservation-accept-btn,
+.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .twilio-device-button-hangup, .input-group > .input-group-prepend > .twilio-device-button-mute, .input-group > .input-group-prepend > .twilio-device-button-confirm, .input-group > .input-group-prepend > .worker-action-btn, .input-group > .input-group-prepend > .task-complete-btn, .input-group > .input-group-prepend > .reservation-reject-btn, .input-group > .input-group-prepend > .reservation-accept-btn,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .twilio-device-button-hangup,
+.input-group > .input-group-append:not(:last-child) > .twilio-device-button-mute,
+.input-group > .input-group-append:not(:last-child) > .twilio-device-button-confirm,
 .input-group > .input-group-append:not(:last-child) > .worker-action-btn,
 .input-group > .input-group-append:not(:last-child) > .task-complete-btn,
 .input-group > .input-group-append:not(:last-child) > .reservation-reject-btn,
 .input-group > .input-group-append:not(:last-child) > .reservation-accept-btn,
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .twilio-device-button-hangup:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .twilio-device-button-mute:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .twilio-device-button-confirm:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .worker-action-btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .task-complete-btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .reservation-reject-btn:not(:last-child):not(.dropdown-toggle),
@@ -3547,15 +3658,21 @@ input[type=button].btn-block {
   border-bottom-right-radius: 0;
 }
 
-.input-group > .input-group-append > .btn, .input-group > .input-group-append > .worker-action-btn, .input-group > .input-group-append > .task-complete-btn, .input-group > .input-group-append > .reservation-reject-btn, .input-group > .input-group-append > .reservation-accept-btn,
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .twilio-device-button-hangup, .input-group > .input-group-append > .twilio-device-button-mute, .input-group > .input-group-append > .twilio-device-button-confirm, .input-group > .input-group-append > .worker-action-btn, .input-group > .input-group-append > .task-complete-btn, .input-group > .input-group-append > .reservation-reject-btn, .input-group > .input-group-append > .reservation-accept-btn,
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .twilio-device-button-hangup,
+.input-group > .input-group-prepend:not(:first-child) > .twilio-device-button-mute,
+.input-group > .input-group-prepend:not(:first-child) > .twilio-device-button-confirm,
 .input-group > .input-group-prepend:not(:first-child) > .worker-action-btn,
 .input-group > .input-group-prepend:not(:first-child) > .task-complete-btn,
 .input-group > .input-group-prepend:not(:first-child) > .reservation-reject-btn,
 .input-group > .input-group-prepend:not(:first-child) > .reservation-accept-btn,
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .twilio-device-button-hangup:not(:first-child),
+.input-group > .input-group-prepend:first-child > .twilio-device-button-mute:not(:first-child),
+.input-group > .input-group-prepend:first-child > .twilio-device-button-confirm:not(:first-child),
 .input-group > .input-group-prepend:first-child > .worker-action-btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .task-complete-btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .reservation-reject-btn:not(:first-child),
@@ -4759,7 +4876,7 @@ a.badge:hover, a.badge:focus {
   display: none;
 }
 
-.btn .badge, .worker-action-btn .badge, .task-complete-btn .badge, .reservation-reject-btn .badge, .reservation-accept-btn .badge {
+.btn .badge, .twilio-device-button-hangup .badge, .twilio-device-button-mute .badge, .twilio-device-button-confirm .badge, .worker-action-btn .badge, .task-complete-btn .badge, .reservation-reject-btn .badge, .reservation-accept-btn .badge {
   position: relative;
   top: -1px;
 }
@@ -7287,11 +7404,11 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-.float-left {
+.float-left, .twilio-device-button-confirm {
   float: left !important;
 }
 
-.float-right {
+.float-right, .twilio-device-button-hangup {
   float: right !important;
 }
 
@@ -7568,13 +7685,15 @@ button.bg-dark:focus {
   margin: 0.5rem !important;
 }
 
-.mt-2,
+.mt-2, .twilio-device-actions-container,
 .my-2 {
   margin-top: 0.5rem !important;
 }
 
 .mr-2, .task-complete-btn, .reservation-reject-btn, .reservation-accept-btn,
-.mx-2 {
+.mx-2,
+.twilio-device-button-hangup,
+.twilio-device-button-confirm {
   margin-right: 0.5rem !important;
 }
 
@@ -7583,8 +7702,10 @@ button.bg-dark:focus {
   margin-bottom: 0.5rem !important;
 }
 
-.ml-2,
-.mx-2 {
+.ml-2, .twilio-device-client-id, .twilio-device-status,
+.mx-2,
+.twilio-device-button-hangup,
+.twilio-device-button-confirm {
   margin-left: 0.5rem !important;
 }
 
@@ -9722,7 +9843,7 @@ button.bg-dark:focus {
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .twilio-device-actions-container {
   text-align: center !important;
 }
 
@@ -9935,7 +10056,7 @@ a.text-dark:hover, a.text-dark:focus {
     box-shadow: none !important;
   }
 
-  a:not(.btn):not(.worker-action-btn):not(.task-complete-btn):not(.reservation-reject-btn):not(.reservation-accept-btn) {
+  a:not(.btn):not(.twilio-device-button-hangup):not(.twilio-device-button-mute):not(.twilio-device-button-confirm):not(.worker-action-btn):not(.task-complete-btn):not(.reservation-reject-btn):not(.reservation-accept-btn) {
     text-decoration: underline;
   }
 
