@@ -3,8 +3,8 @@ var reservationsListComponent;
 
 // Sample code for customizing the worker component
 function customizeWorkerComponent(component) {
-  // Add new worker's attribute to be show in the component 
-  // As example, we pourposly use a bootstrap class for that. 
+  // Add new worker's attribute to be show in the component
+  // As example, we pourposly use a bootstrap class for that.
   // Alternative you can use the default class `worker-attribute`
   component.workerAttributes.push({
     label: 'sid',
@@ -32,6 +32,13 @@ function registerWorker(workerSid) {
     });
 }
 
+function registerTwilioDevice() {
+  const twilioDeviceComponent = new TwilioDeviceComponent(
+    'gverni',
+    document.getElementById('twilio-device')
+  );
+}
+
 if (!WORKER_SID) {
   window.alert(
     'Provide worker sid in the url: e.g. http://yourserver.com/worker.html?workerSid=WKXXXX'
@@ -39,4 +46,5 @@ if (!WORKER_SID) {
   // log('WORKER_SID variable missing!', 'error');
 } else {
   registerWorker(WORKER_SID);
+  registerTwilioDevice()
 }
