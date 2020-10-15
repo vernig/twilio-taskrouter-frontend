@@ -35,7 +35,8 @@ function registerWorker(workerSid) {
 function registerTwilioDevice() {
   const twilioDeviceComponent = new TwilioDeviceComponent(
     'gverni',
-    document.getElementById('twilio-device')
+    document.getElementById('twilio-device'),
+    { sounds: { incoming: '/ring.mp3' } }
   );
 }
 
@@ -46,5 +47,5 @@ if (!WORKER_SID) {
   // log('WORKER_SID variable missing!', 'error');
 } else {
   registerWorker(WORKER_SID);
-  registerTwilioDevice()
+  registerTwilioDevice();
 }
