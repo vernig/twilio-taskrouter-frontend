@@ -47,3 +47,7 @@
   @extend .btn;
   @extend .btn-info;
 }
+
+
+// Import Twilio Device SCSS file
+@import './twilio-device-frontend.scss';

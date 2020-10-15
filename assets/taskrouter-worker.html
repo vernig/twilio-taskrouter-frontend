@@ -4,36 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script type="text/javascript"
-    src="//sdk.twilio.com/js/client/releases/1.10.1/twilio.js"></script>
+    <script
+      type="text/javascript"
+      src="//sdk.twilio.com/js/client/releases/1.10.1/twilio.js"
+    ></script>
     <script
       type="text/javascript"
       src="//media.twiliocdn.com/taskrouter/js/v1.20/taskrouter.min.js"
     ></script>
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="taskrouter-frontend.css"
-    />
+    <link rel="stylesheet" href="taskrouter-frontend.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <title>Worker frontend</title>
   </head>
-  <body class="mx-3">
-    <h3>Worker</h3>
-    <div id="worker" class="mt-3">
+  <body class="">
+    <div class="d-flex flex-column flex-md-row p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <img src="taskrouter-logo-red.png" alt="taskrouter logo" width="50px">
+      <h5 class="my-auto ml-2">Twilio TaskRouter Frontend</h5>
     </div>
-    <div id="call-controls" style="display: none;" class="mt-3">
-    </div>
-    <div id="reservations" class="mt-3">
-    <h3>Reservations</h3>
-      <ul class="list-group" id="reservations-group"></ul>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col">
+          <h3>Worker</h3>
+          <div id="worker"></div>
+        </div>
+        <div class="col">
+          <h3>Twilio Audio Device</h3>
+          <div id="twilio-device" class="border p-4 mx-auto"></div>
+        </div>
+      </div>
+      <div id="reservations" class="row mt-3">
+        <div class="col">
+          <h3>Reservations</h3>
+          <div id="reservations-group" class></div>
+        </div>
+      </div>
     </div>
 
     <script>
       urlParams = new URLSearchParams(window.location.search);
       const WORKER_SID = urlParams.get('workerSid');
     </script>
-
+    <script src="taskrouter-components/TwilioDeviceComponent.js"></script>
     <script src="taskrouter-components/ReservationsListComponent.js"></script>
     <script src="taskrouter-components/WorkerComponent.js"></script>
     <script src="taskrouter-worker.js"></script>
