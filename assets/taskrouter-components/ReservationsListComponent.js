@@ -1,10 +1,10 @@
 /**
- * Class ReservationList 
+ * Class ReservationList
  */
 
 class ReservationsListComponent {
   /**
-   * 
+   *
    * @param {*} workerClient WorkerClient Object returned by new Twilio.TaskRouter.Worker(WORKER_TOKEN)
    * @param {*} rootElement DOM target element container for the reservations list
    */
@@ -36,6 +36,7 @@ class ReservationsListComponent {
         },
       ],
       completed: [],
+      canceled: []
     };
 
     //   [ 'reserved':
@@ -54,7 +55,11 @@ class ReservationsListComponent {
   }
 
   _acceptReservation(reservation) {
-    reservation.accept();
+    if (reservation.task.taskChannelUniqueName === 'voice') {
+      reservation.conference();
+    } else {
+      reservation.accept();
+    }
   }
 
   _rejectReservation(reservation) {
