@@ -11,7 +11,7 @@ class TwilioDeviceComponent {
    * @param {Element} rootElement Root Element for rendering the Component
    *
    */
-  constructor(clientId, rootElement) {
+  constructor(clientId, rootElement, attributes = {}) {
     this._clientId = clientId;
     this._rootElement = rootElement;
     this._twilioDevice;
@@ -113,7 +113,7 @@ class TwilioDeviceComponent {
     this._actions['disconnected'] = this._actions['unregistered'];
     this._connection;
 
-    this._registerTwilioDevice(this._clientId);
+    this._registerTwilioDevice(this._clientId, attributes);
   }
 
   _log(message) {
@@ -181,16 +181,14 @@ class TwilioDeviceComponent {
     });
   }
 
-  _registerTwilioDevice(clientId) {
+  _registerTwilioDevice(clientId, attributes) {
     fetch(`/get-client-token?clientId=${clientId}`)
       .then((response) => response.json())
       .then((response) => {
         // Setup Twilio.Device
+        attributes.codecPreferences = attributes.codecPreferences || ['opus', 'pcmu']
         this._uistate = 'connecting';
-        this._twilioDevice = new Twilio.Device(response.token, {
-          codecPreferences: ['opus', 'pcmu'],
-          enableRingingState: false,
-        });
+        this._twilioDevice = new Twilio.Device(response.token, attributes);
         this._subscribeEvents();
       });
   }
